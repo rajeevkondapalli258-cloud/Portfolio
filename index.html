@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rajeev | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <div class="logo">
+            Rajeev<span>.</span>
+        </div>
+
+        <div class="nav-links">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('projects')">Projects</button>
+            <button onclick="showSection('achievements')">Achievements</button>
+            <button onclick="showSection('tasks')">Tasks</button>
+            <button onclick="showSection('resume')">Resume</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </div>
+
+        <button class="theme-btn" onclick="toggleTheme()">🌙</button>
+        <button class="edit-btn" onclick="showSection('edit')">    ✏️ Edit Portfolio
+</button>
+    </nav>
+
+
+    <!-- HOME -->
+    <section id="home" class="page active">
+
+        <div class="hero">
+
+            <div class="hero-text">
+
+                <p class="hello">👋 Hello, I'm</p>
+
+                <h1>Rajeev</h1>
+
+                <h2>B.Tech CSE Student</h2>
+
+                <p>
+                    Programmer • Developer • Tech Enthusiast
+                </p>
+
+                <p class="description">
+                    Welcome to my personal portfolio.
+                    Here you can explore my skills, projects,
+                    achievements and learning journey.
+                </p>
+
+                <button class="main-btn"
+                        onclick="showSection('about')">
+                    Explore My Portfolio 🚀
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="page">
+
+        <div class="content">
+
+            <h1>About Me 👤</h1>
+
+            <p class="intro">
+                Hi! I'm Rajeev, a Computer Science Engineering
+                student interested in technology and software development.
+            </p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span>🎓</span>
+                    <h2>Education</h2>
+                    <p>
+                        B.Tech in Computer Science Engineering
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>💻</span>
+                    <h2>Interests</h2>
+                    <p>
+                        Programming, Web Development,
+                        AI and Software Development
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>🎯</span>
+                    <h2>Goal</h2>
+                    <p>
+                        Continuously improve my technical
+                        and problem-solving skills.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>🚀</span>
+                    <h2>Learning</h2>
+                    <p>
+                        Python, Java, JavaScript,
+                        SQL and modern technologies.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="page">
+
+        <div class="content">
+
+            <h1>My Skills 🛠️</h1>
+
+            <div class="skill-grid">
+
+                <div class="skill-card">
+                    <h2>🐍 Python</h2>
+                    <p>Programming & Problem Solving</p>
+                    <div class="bar">
+                        <div style="width:75%"></div>
+                    </div>
+                    <small>75%</small>
+                </div>
+
+                <div class="skill-card">
+                    <h2>☕ Java</h2>
+                    <p>Object Oriented Programming</p>
+                    <div class="bar">
+                        <div style="width:65%"></div>
+                    </div>
+                    <small>65%</small>
+                </div>
+
+                <div class="skill-card">
+                    <h2>🌐 HTML</h2>
+                    <p>Web Structure</p>
+                    <div class="bar">
+                        <div style="width:90%"></div>
+                    </div>
+                    <small>90%</small>
+                </div>
+
+                <div class="skill-card">
+                    <h2>🎨 CSS</h2>
+                    <p>Web Design</p>
+                    <div class="bar">
+                        <div style="width:80%"></div>
+                    </div>
+                    <small>80%</small>
+                </div>
+
+                <div class="skill-card">
+                    <h2>⚡ JavaScript</h2>
+                    <p>Interactive Websites</p>
+                    <div class="bar">
+                        <div style="width:65%"></div>
+                    </div>
+                    <small>65%</small>
+                </div>
+
+                <div class="skill-card">
+                    <h2>🗄️ SQL</h2>
+                    <p>Database Management</p>
+                    <div class="bar">
+                        <div style="width:70%"></div>
+                    </div>
+                    <small>70%</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="page">
+
+        <div class="content">
+
+            <h1>My Projects 🚀</h1>
+
+            <div class="cards">
+
+                <div class="card project">
+                    <span>🤖</span>
+                    <h2>JARVIS Assistant</h2>
+                    <p>
+                        Voice assistant built using Python
+                        and Termux APIs.
+                    </p>
+                    <button>Python</button>
+                </div>
+
+                <div class="card project">
+                    <span>🎮</span>
+                    <h2>Racing Game</h2>
+                    <p>
+                        Browser-based racing game with
+                        interactive controls.
+                    </p>
+                    <button>JavaScript</button>
+                </div>
+
+                <div class="card project">
+                    <span>🌱</span>
+                    <h2>Environmental Website</h2>
+                    <p>
+                        Website focused on environmental
+                        awareness and cleanliness.
+                    </p>
+                    <button>Web Development</button>
+                </div>
+
+                <div class="card project">
+                    <span>💬</span>
+                    <h2>Chat Application</h2>
+                    <p>
+                        Messaging application project
+                        using modern web technologies.
+                    </p>
+                    <button>Full Stack</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="page">
+
+        <div class="content">
+
+            <h1>Achievements 🏆</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <span>🎓</span>
+                    <h2>B.Tech CSE</h2>
+                    <p>
+                        Pursuing Computer Science Engineering.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>💻</span>
+                    <h2>Programming</h2>
+                    <p>
+                        Learning multiple programming languages.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>🚀</span>
+                    <h2>Project Building</h2>
+                    <p>
+                        Developing academic and personal projects.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>📚</span>
+                    <h2>Continuous Learning</h2>
+                    <p>
+                        Improving technical skills continuously.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TASKS -->
+    <section id="tasks" class="page">
+
+        <div class="content">
+
+            <h1>My Tasks 📋</h1>
+
+            <div class="task-list">
+
+                <div class="task done">
+                    <span>✅</span>
+                    <div>
+                        <h2>HTML Basics</h2>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div class="task done">
+                    <span>✅</span>
+                    <div>
+                        <h2>CSS Basics</h2>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div class="task done">
+                    <span>✅</span>
+                    <div>
+                        <h2>Python Basics</h2>
+                        <p>Completed</p>
+                    </div>
+                </div>
+
+                <div class="task working">
+                    <span>🔄</span>
+                    <div>
+                        <h2>JavaScript</h2>
+                        <p>Currently Learning</p>
+                    </div>
+                </div>
+
+                <div class="task working">
+                    <span>🔄</span>
+                    <div>
+                        <h2>Data Structures</h2>
+                        <p>Currently Learning</p>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <span>⬜</span>
+                    <div>
+                        <h2>React</h2>
+                        <p>Upcoming</p>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <span>⬜</span>
+                    <div>
+                        <h2>AI / Machine Learning</h2>
+                        <p>Future Goal</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESUME -->
+    <section id="resume" class="page">
+
+        <div class="content center">
+
+            <h1>My Resume 📄</h1>
+
+            <div class="resume-box">
+
+                <div class="resume-icon">
+                    📄
+                </div>
+
+                <h2>Download My Resume</h2>
+
+                <p>
+                    View my education, skills,
+                    projects and achievements.
+                </p>
+
+                <a href="resume.pdf"
+                   download
+                   class="main-btn">
+                    📥 Download Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+
+        <div class="content">
+
+            <h1>Contact Me 📬</h1>
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <span>📧</span>
+                    <h2>Email</h2>
+                    <p>yourmail@gmail.com</p>
+                </div>
+
+                <div class="contact-card">
+                    <span>🐙</span>
+                    <h2>GitHub</h2>
+                    <p>github.com/yourusername</p>
+                </div>
+
+                <div class="contact-card">
+                    <span>💼</span>
+                    <h2>LinkedIn</h2>
+                    <p>linkedin.com/in/yourusername</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+</section>
+
+
+<!-- EDIT PORTFOLIO -->
+<section id="edit" class="page">
+
+    <h2>✏️ Edit Portfolio</h2>
+
+    <div class="edit-card">
+
+        <h3>Portfolio Settings</h3>
+
+        <label>Name</label>
+        <input type="text" id="editName">
+
+        <label>Email</label>
+        <input type="email" id="editEmail">
+
+        <label>GitHub</label>
+        <input type="text" id="editGithub">
+
+        <label>LinkedIn</label>
+        <input type="text" id="editLinkedin">
+
+        <label>Resume</label>
+        <input type="file" id="editResume" accept=".pdf">
+
+        <button class="save-btn" onclick="savePortfolio()">
+            💾 Save Changes
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h2>Rajeev<span>.</span></h2>
+
+        <p>
+            B.Tech CSE Student • Developer
+        </p>
+
+        <p>
+            © 2026 Rajeev
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
