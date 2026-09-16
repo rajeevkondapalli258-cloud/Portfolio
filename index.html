@@ -12,56 +12,799 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- ================= NAVBAR ================= -->
+
     <nav class="navbar">
 
         <div class="logo">
-            Rajeev<span>.</span>
+            <span id="navName">Rajeev</span>.
         </div>
 
         <div class="nav-links">
+
             <button onclick="showSection('home')">Home</button>
             <button onclick="showSection('about')">About</button>
+            <button onclick="showSection('education')">Education</button>
             <button onclick="showSection('skills')">Skills</button>
             <button onclick="showSection('projects')">Projects</button>
             <button onclick="showSection('achievements')">Achievements</button>
             <button onclick="showSection('tasks')">Tasks</button>
             <button onclick="showSection('resume')">Resume</button>
             <button onclick="showSection('contact')">Contact</button>
+
+            <button class="theme-btn" onclick="toggleTheme()">
+                ☀️
+            </button>
+
+            <button class="edit-btn" onclick="showSection('edit')">
+                ✏️ Edit Portfolio
+            </button>
+
         </div>
 
-        <button class="theme-btn" onclick="toggleTheme()">🌙</button>
-        <button class="edit-btn" onclick="showSection('edit')">    ✏️ Edit Portfolio
-</button>
     </nav>
 
 
-    <!-- HOME -->
+    <!-- ================= HOME ================= -->
+
     <section id="home" class="page active">
 
         <div class="hero">
 
-            <div class="hero-text">
+            <div class="hero-content">
 
-                <p class="hello">👋 Hello, I'm</p>
-
-                <h1>Rajeev</h1>
-
-                <h2>B.Tech CSE Student</h2>
-
-                <p>
-                    Programmer • Developer • Tech Enthusiast
+                <p class="small-title">
+                    B.TECH CSE STUDENT
                 </p>
 
-                <p class="description">
-                    Welcome to my personal portfolio.
-                    Here you can explore my skills, projects,
-                    achievements and learning journey.
+                <h1>
+                    Hi, I'm
+                    <span id="homeName">Rajeev</span>
+                </h1>
+
+                <h2>
+                    Programmer | Developer | Learner
+                </h2>
+
+                <p class="hero-description">
+                    Building my skills through programming,
+                    projects and continuous learning.
                 </p>
 
-                <button class="main-btn"
-                        onclick="showSection('about')">
-                    Explore My Portfolio 🚀
+                <div class="hero-buttons">
+
+                    <button class="main-btn"
+                            onclick="showSection('projects')">
+                        View My Work →
+                    </button>
+
+                    <button class="outline-btn"
+                            onclick="showSection('contact')">
+                        ✉ Contact Me
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>🎓</h3>
+                <strong>B.Tech</strong>
+                <p>CSE Student</p>
+            </div>
+
+            <div class="stat">
+                <h3>💻</h3>
+                <strong>6+</strong>
+                <p>Technologies</p>
+            </div>
+
+            <div class="stat">
+                <h3>🚀</h3>
+                <strong>4+</strong>
+                <p>Projects</p>
+            </div>
+
+            <div class="stat">
+                <h3>📚</h3>
+                <strong>2024 - 2028</strong>
+                <p>Education</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="page">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <div class="about-box">
+
+            <h3>
+                👋 Hello, I'm <span id="aboutName">Rajeev</span>
+            </h3>
+
+            <p id="aboutText">
+                I am a B.Tech Computer Science Engineering student
+                interested in programming, web development and
+                emerging technologies.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and building
+                practical projects to improve my skills.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="page">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+        <div class="education-card">
+
+            <div class="education-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <h3 id="educationTitle">
+                    B.Tech Computer Science Engineering
+                </h3>
+
+                <p id="educationCollege">
+                    Swarnandhra Engineering College
+                </p>
+
+                <p id="educationYears">
+                    2024 - 2028
+                </p>
+
+                <span class="education-status">
+                    Currently Studying
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="page">
+
+        <h2 class="section-title">
+            My Skills
+        </h2>
+
+        <div class="skills-container">
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>Python</span>
+                    <span>80%</span>
+                </div>
+
+                <div class="progress">
+                    <div style="width:80%"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>Java</span>
+                    <span>70%</span>
+                </div>
+
+                <div class="progress">
+                    <div style="width:70%"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+
+                <div class="progress">
+                    <div style="width:90%"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>CSS</span>
+                    <span>80%</span>
+                </div>
+
+                <div class="progress">
+                    <div style="width:80%"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>JavaScript</span>
+                    <span>65%</span>
+                </div>
+
+                <div class="progress">
+                    <div style="width:65%"></div>
+                </div>
+            </div>
+
+
+            <div class="skill">
+                <div class="skill-header">
+                    <span>SQL</span>
+                    <span>70%</span>
+                </div>
+
+                <div class="progress">
+                    <div style="width:70%"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="page">
+
+        <h2 class="section-title">
+            My Projects
+        </h2>
+
+        <div class="cards">
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    🤖
+                </div>
+
+                <h3 id="project1Title">
+                    JARVIS Assistant
+                </h3>
+
+                <p id="project1Text">
+                    A personal voice assistant built using Python
+                    and Termux.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    🏎️
+                </div>
+
+                <h3 id="project2Title">
+                    Racing Game
+                </h3>
+
+                <p id="project2Text">
+                    A browser-based racing game with interactive
+                    controls.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    🌱
+                </div>
+
+                <h3 id="project3Title">
+                    Environmental Website
+                </h3>
+
+                <p id="project3Text">
+                    A website created for environmental awareness.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    💬
+                </div>
+
+                <h3 id="project4Title">
+                    Chat Application
+                </h3>
+
+                <p id="project4Text">
+                    A chat application project inspired by
+                    modern messaging platforms.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section id="achievements" class="page">
+
+        <h2 class="section-title">
+            Achievements
+        </h2>
+
+        <div class="cards">
+
+            <div class="info-card">
+                <span>🎓</span>
+                <h3>B.Tech CSE</h3>
+                <p>Currently pursuing Computer Science Engineering.</p>
+            </div>
+
+            <div class="info-card">
+                <span>💻</span>
+                <h3>Programming</h3>
+                <p>Learning multiple programming languages.</p>
+            </div>
+
+            <div class="info-card">
+                <span>🚀</span>
+                <h3>Project Building</h3>
+                <p>Building practical software projects.</p>
+            </div>
+
+            <div class="info-card">
+                <span>📚</span>
+                <h3>Continuous Learning</h3>
+                <p>Learning new technologies regularly.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TASKS ================= -->
+
+    <section id="tasks" class="page">
+
+        <h2 class="section-title">
+            Learning Tasks
+        </h2>
+
+        <div class="cards">
+
+            <div class="info-card">
+                <span>✅</span>
+                <h3>HTML</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="info-card">
+                <span>✅</span>
+                <h3>CSS</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="info-card">
+                <span>✅</span>
+                <h3>Python</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="info-card">
+                <span>🔄</span>
+                <h3>JavaScript</h3>
+                <p>Currently Learning</p>
+            </div>
+
+            <div class="info-card">
+                <span>🔄</span>
+                <h3>Data Structures</h3>
+                <p>Currently Learning</p>
+            </div>
+
+            <div class="info-card">
+                <span>⏳</span>
+                <h3>React</h3>
+                <p>Upcoming</p>
+            </div>
+
+            <div class="info-card">
+                <span>⏳</span>
+                <h3>AI / ML</h3>
+                <p>Upcoming</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RESUME ================= -->
+
+    <section id="resume" class="page">
+
+        <h2 class="section-title">
+            My Resume
+        </h2>
+
+        <div class="resume-box">
+
+            <div class="resume-icon">
+                📄
+            </div>
+
+            <h3>
+                Resume
+            </h3>
+
+            <p>
+                Download my latest resume.
+            </p>
+
+            <a id="resumeLink"
+               href="resume.pdf"
+               download
+               class="main-btn">
+                📥 Download Resume
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="page">
+
+        <h2 class="section-title">
+            Contact Me
+        </h2>
+
+        <div class="contact-box">
+
+            <div class="contact-item">
+
+                <span>📧</span>
+
+                <div>
+                    <h3>Email</h3>
+
+                    <a id="contactEmail"
+                       href="mailto:your-email@example.com">
+                        your-email@example.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>🐙</span>
+
+                <div>
+                    <h3>GitHub</h3>
+
+                    <a id="contactGithub"
+                       href="#"
+                       target="_blank">
+                        GitHub Profile
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <span>💼</span>
+
+                <div>
+                    <h3>LinkedIn</h3>
+
+                    <a id="contactLinkedin"
+                       href="#"
+                       target="_blank">
+                        LinkedIn Profile
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= EDIT ================= -->
+
+    <section id="edit" class="page">
+
+        <h2 class="section-title">
+            ✏️ Edit Portfolio
+        </h2>
+
+        <div class="edit-box">
+
+            <h3>
+                Portfolio Editor
+            </h3>
+
+            <p class="edit-description">
+                Change your information and click Save Changes.
+            </p>
+
+
+            <!-- NAME -->
+
+            <label>
+                👤 Your Name
+            </label>
+
+            <input
+                type="text"
+                id="editName"
+                placeholder="Enter your name"
+            >
+
+
+            <!-- EMAIL -->
+
+            <label>
+                📧 Email
+            </label>
+
+            <input
+                type="email"
+                id="editEmail"
+                placeholder="your@email.com"
+            >
+
+
+            <!-- GITHUB -->
+
+            <label>
+                🐙 GitHub URL
+            </label>
+
+            <input
+                type="text"
+                id="editGithub"
+                placeholder="https://github.com/username"
+            >
+
+
+            <!-- LINKEDIN -->
+
+            <label>
+                💼 LinkedIn URL
+            </label>
+
+            <input
+                type="text"
+                id="editLinkedin"
+                placeholder="https://linkedin.com/in/username"
+            >
+
+
+            <!-- ABOUT -->
+
+            <label>
+                📝 About Me
+            </label>
+
+            <textarea
+                id="editAbout"
+                placeholder="Write something about yourself"
+            ></textarea>
+
+
+            <!-- EDUCATION -->
+
+            <label>
+                🎓 Education
+            </label>
+
+            <input
+                type="text"
+                id="editEducation"
+                placeholder="B.Tech Computer Science Engineering"
+            >
+
+
+            <label>
+                🏫 College
+            </label>
+
+            <input
+                type="text"
+                id="editCollege"
+                placeholder="College name"
+            >
+
+
+            <label>
+                📅 Education Years
+            </label>
+
+            <input
+                type="text"
+                id="editYears"
+                placeholder="2024 - 2028"
+            >
+
+
+            <!-- PROJECT 1 -->
+
+            <h4 class="edit-subtitle">
+                🚀 Project 1
+            </h4>
+
+            <label>
+                Project Name
+            </label>
+
+            <input
+                type="text"
+                id="editProject1Title"
+            >
+
+            <label>
+                Project Description
+            </label>
+
+            <textarea
+                id="editProject1Text"
+            ></textarea>
+
+
+            <!-- PROJECT 2 -->
+
+            <h4 class="edit-subtitle">
+                🚀 Project 2
+            </h4>
+
+            <label>
+                Project Name
+            </label>
+
+            <input
+                type="text"
+                id="editProject2Title"
+            >
+
+            <label>
+                Project Description
+            </label>
+
+            <textarea
+                id="editProject2Text"
+            ></textarea>
+
+
+            <!-- PROJECT 3 -->
+
+            <h4 class="edit-subtitle">
+                🚀 Project 3
+            </h4>
+
+            <label>
+                Project Name
+            </label>
+
+            <input
+                type="text"
+                id="editProject3Title"
+            >
+
+            <label>
+                Project Description
+            </label>
+
+            <textarea
+                id="editProject3Text"
+            ></textarea>
+
+
+            <!-- PROJECT 4 -->
+
+            <h4 class="edit-subtitle">
+                🚀 Project 4
+            </h4>
+
+            <label>
+                Project Name
+            </label>
+
+            <input
+                type="text"
+                id="editProject4Title"
+            >
+
+            <label>
+                Project Description
+            </label>
+
+            <textarea
+                id="editProject4Text"
+            ></textarea>
+
+
+            <!-- RESUME -->
+
+            <h4 class="edit-subtitle">
+                📄 Resume
+            </h4>
+
+            <label>
+                Select Resume PDF
+            </label>
+
+            <input
+                type="file"
+                id="editResume"
+                accept=".pdf"
+            >
+
+            <p class="resume-note">
+                For your online website, also keep a file named
+                <strong>resume.pdf</strong> in your portfolio folder.
+            </p>
+
+
+            <!-- BUTTONS -->
+
+            <div class="edit-buttons">
+
+                <button
+                    class="save-btn"
+                    onclick="savePortfolio()">
+                    💾 Save Changes
+                </button>
+
+                <button
+                    class="cancel-btn"
+                    onclick="showSection('home')">
+                    Cancel
                 </button>
 
             </div>
@@ -71,429 +814,36 @@
     </section>
 
 
-    <!-- ABOUT -->
-    <section id="about" class="page">
+    <!-- ================= FOOTER ================= -->
 
-        <div class="content">
-
-            <h1>About Me 👤</h1>
-
-            <p class="intro">
-                Hi! I'm Rajeev, a Computer Science Engineering
-                student interested in technology and software development.
-            </p>
-
-            <div class="cards">
-
-                <div class="card">
-                    <span>🎓</span>
-                    <h2>Education</h2>
-                    <p>
-                        B.Tech in Computer Science Engineering
-                    </p>
-                </div>
-
-                <div class="card">
-                    <span>💻</span>
-                    <h2>Interests</h2>
-                    <p>
-                        Programming, Web Development,
-                        AI and Software Development
-                    </p>
-                </div>
-
-                <div class="card">
-                    <span>🎯</span>
-                    <h2>Goal</h2>
-                    <p>
-                        Continuously improve my technical
-                        and problem-solving skills.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <span>🚀</span>
-                    <h2>Learning</h2>
-                    <p>
-                        Python, Java, JavaScript,
-                        SQL and modern technologies.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section id="skills" class="page">
-
-        <div class="content">
-
-            <h1>My Skills 🛠️</h1>
-
-            <div class="skill-grid">
-
-                <div class="skill-card">
-                    <h2>🐍 Python</h2>
-                    <p>Programming & Problem Solving</p>
-                    <div class="bar">
-                        <div style="width:75%"></div>
-                    </div>
-                    <small>75%</small>
-                </div>
-
-                <div class="skill-card">
-                    <h2>☕ Java</h2>
-                    <p>Object Oriented Programming</p>
-                    <div class="bar">
-                        <div style="width:65%"></div>
-                    </div>
-                    <small>65%</small>
-                </div>
-
-                <div class="skill-card">
-                    <h2>🌐 HTML</h2>
-                    <p>Web Structure</p>
-                    <div class="bar">
-                        <div style="width:90%"></div>
-                    </div>
-                    <small>90%</small>
-                </div>
-
-                <div class="skill-card">
-                    <h2>🎨 CSS</h2>
-                    <p>Web Design</p>
-                    <div class="bar">
-                        <div style="width:80%"></div>
-                    </div>
-                    <small>80%</small>
-                </div>
-
-                <div class="skill-card">
-                    <h2>⚡ JavaScript</h2>
-                    <p>Interactive Websites</p>
-                    <div class="bar">
-                        <div style="width:65%"></div>
-                    </div>
-                    <small>65%</small>
-                </div>
-
-                <div class="skill-card">
-                    <h2>🗄️ SQL</h2>
-                    <p>Database Management</p>
-                    <div class="bar">
-                        <div style="width:70%"></div>
-                    </div>
-                    <small>70%</small>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section id="projects" class="page">
-
-        <div class="content">
-
-            <h1>My Projects 🚀</h1>
-
-            <div class="cards">
-
-                <div class="card project">
-                    <span>🤖</span>
-                    <h2>JARVIS Assistant</h2>
-                    <p>
-                        Voice assistant built using Python
-                        and Termux APIs.
-                    </p>
-                    <button>Python</button>
-                </div>
-
-                <div class="card project">
-                    <span>🎮</span>
-                    <h2>Racing Game</h2>
-                    <p>
-                        Browser-based racing game with
-                        interactive controls.
-                    </p>
-                    <button>JavaScript</button>
-                </div>
-
-                <div class="card project">
-                    <span>🌱</span>
-                    <h2>Environmental Website</h2>
-                    <p>
-                        Website focused on environmental
-                        awareness and cleanliness.
-                    </p>
-                    <button>Web Development</button>
-                </div>
-
-                <div class="card project">
-                    <span>💬</span>
-                    <h2>Chat Application</h2>
-                    <p>
-                        Messaging application project
-                        using modern web technologies.
-                    </p>
-                    <button>Full Stack</button>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ACHIEVEMENTS -->
-    <section id="achievements" class="page">
-
-        <div class="content">
-
-            <h1>Achievements 🏆</h1>
-
-            <div class="cards">
-
-                <div class="card">
-                    <span>🎓</span>
-                    <h2>B.Tech CSE</h2>
-                    <p>
-                        Pursuing Computer Science Engineering.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <span>💻</span>
-                    <h2>Programming</h2>
-                    <p>
-                        Learning multiple programming languages.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <span>🚀</span>
-                    <h2>Project Building</h2>
-                    <p>
-                        Developing academic and personal projects.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <span>📚</span>
-                    <h2>Continuous Learning</h2>
-                    <p>
-                        Improving technical skills continuously.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- TASKS -->
-    <section id="tasks" class="page">
-
-        <div class="content">
-
-            <h1>My Tasks 📋</h1>
-
-            <div class="task-list">
-
-                <div class="task done">
-                    <span>✅</span>
-                    <div>
-                        <h2>HTML Basics</h2>
-                        <p>Completed</p>
-                    </div>
-                </div>
-
-                <div class="task done">
-                    <span>✅</span>
-                    <div>
-                        <h2>CSS Basics</h2>
-                        <p>Completed</p>
-                    </div>
-                </div>
-
-                <div class="task done">
-                    <span>✅</span>
-                    <div>
-                        <h2>Python Basics</h2>
-                        <p>Completed</p>
-                    </div>
-                </div>
-
-                <div class="task working">
-                    <span>🔄</span>
-                    <div>
-                        <h2>JavaScript</h2>
-                        <p>Currently Learning</p>
-                    </div>
-                </div>
-
-                <div class="task working">
-                    <span>🔄</span>
-                    <div>
-                        <h2>Data Structures</h2>
-                        <p>Currently Learning</p>
-                    </div>
-                </div>
-
-                <div class="task">
-                    <span>⬜</span>
-                    <div>
-                        <h2>React</h2>
-                        <p>Upcoming</p>
-                    </div>
-                </div>
-
-                <div class="task">
-                    <span>⬜</span>
-                    <div>
-                        <h2>AI / Machine Learning</h2>
-                        <p>Future Goal</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- RESUME -->
-    <section id="resume" class="page">
-
-        <div class="content center">
-
-            <h1>My Resume 📄</h1>
-
-            <div class="resume-box">
-
-                <div class="resume-icon">
-                    📄
-                </div>
-
-                <h2>Download My Resume</h2>
-
-                <p>
-                    View my education, skills,
-                    projects and achievements.
-                </p>
-
-                <a href="resume.pdf"
-                   download
-                   class="main-btn">
-                    📥 Download Resume
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section id="contact" class="page">
-
-        <div class="content">
-
-            <h1>Contact Me 📬</h1>
-
-            <div class="contact-grid">
-
-                <div class="contact-card">
-                    <span>📧</span>
-                    <h2>Email</h2>
-                    <p>yourmail@gmail.com</p>
-                </div>
-
-                <div class="contact-card">
-                    <span>🐙</span>
-                    <h2>GitHub</h2>
-                    <p>github.com/yourusername</p>
-                </div>
-
-                <div class="contact-card">
-                    <span>💼</span>
-                    <h2>LinkedIn</h2>
-                    <p>linkedin.com/in/yourusername</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-</section>
-
-
-<!-- EDIT PORTFOLIO -->
-<section id="edit" class="page">
-
-    <h2>✏️ Edit Portfolio</h2>
-
-    <div class="edit-card">
-
-        <h3>Portfolio Settings</h3>
-
-        <label>Name</label>
-        <input type="text" id="editName">
-
-        <label>Email</label>
-        <input type="email" id="editEmail">
-
-        <label>GitHub</label>
-        <input type="text" id="editGithub">
-
-        <label>LinkedIn</label>
-        <input type="text" id="editLinkedin">
-
-        <label>Resume</label>
-        <input type="file" id="editResume" accept=".pdf">
-
-        <button class="save-btn" onclick="savePortfolio()">
-            💾 Save Changes
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- FOOTER -->
-<footer>
-
-    <!-- FOOTER -->
     <footer>
 
-        <h2>Rajeev<span>.</span></h2>
+        <h2>
+            <span id="footerName">
+                Rajeev
+            </span>.
+        </h2>
 
         <p>
             B.Tech CSE Student • Developer
         </p>
 
         <p>
-            © 2026 Rajeev
+            © 2026 <span id="footerName2">Rajeev</span>
         </p>
 
     </footer>
 
 
+    <!-- CURSOR EFFECT -->
+
+    <div class="cursor-glow"></div>
+
+    <div class="cursor-dot"></div>
+
+
     <!-- JAVASCRIPT -->
+
     <script src="script.js"></script>
 
 </body>
